@@ -10,4 +10,11 @@ def mod_exp(x, n):
     else:
         return mod_exp(x, n-1)*x
     
-print(mod_exp(512,83))
+# print(mod_exp(512,83))
+
+n = int(input())
+
+for i in range(n):
+    a,b = list(map(int, input().split(" ")))
+    ans = (mod_exp(a,b)) % (10**9 + 7)
+    print(ans)
