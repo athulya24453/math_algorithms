@@ -7,4 +7,4 @@ def ncr(n,k):
 def catalanNum(n: int) -> int:
     return int((1/(n+1))*ncr(2*n, n))
 
-print(catalanNum(4))
+print(catalanNum(3))
